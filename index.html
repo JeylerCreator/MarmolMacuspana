@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#151a1c">
+
+<title>Macuspana Transformadora de Mármol | Mármol, Cuarzo y Granito</title>
+<meta name="description" content="Transformadora de mármol, cuarzo y granito natural en Macuspana, Tabasco. Cubiertas, pisos artesanales, monumentos funerarios y pulido de pisos. Solicita tu cotización.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --fondo: #151a1c;
+  --fondo2: #22292b;
+  --dorado: #d9b46a;
+  --dorado-claro: #f0d18d;
+  --texto: #25282a;
+  --gris: #687077;
+  --claro: #f5f4f0;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--texto);
+  background: var(--claro);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.contenedor {
+  width: min(1160px, 90%);
+  margin: auto;
+}
+
+.titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.etiqueta {
+  color: #b18a43;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: .91rem;
+  transition: .25s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.boton-dorado {
+  background: var(--dorado);
+  color: #171a1b;
+}
+
+.boton-dorado:hover {
+  background: var(--dorado-claro);
+}
+
+.boton-borde {
+  border-color: rgba(255,255,255,.5);
+  color: white;
+}
+
+.boton-borde:hover {
+  border-color: var(--dorado);
+  color: var(--dorado-claro);
+}
+
+/* NAVEGACIÓN */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(21,26,28,.98);
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.logo-simbolo {
+  color: var(--dorado);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.logo strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.logo small {
+  color: var(--dorado);
+  font-size: .57rem;
+  letter-spacing: 1.2px;
+  margin-top: 4px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  font-size: .88rem;
+}
+
+.menu a:not(.boton):hover {
+  color: var(--dorado);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+}
+
+/* PORTADA */
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10,14,15,.96) 0%,
+      rgba(10,14,15,.80) 43%,
+      rgba(10,14,15,.20) 100%
+    ),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85')
+    center 55% / cover;
+}
+
+.hero-contenido {
+  max-width: 690px;
+  padding: 85px 0;
+}
+
+.hero .etiqueta {
+  color: var(--dorado-claro);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6.5vw, 5rem);
+  line-height: 1.04;
+  margin: 18px 0;
+  font-weight: 600;
+}
+
+.hero h1 span {
+  color: var(--dorado-claro);
+}
+
+.hero p {
+  max-width: 540px;
+  color: #e2e4e4;
+  font-size: 1.05rem;
+  margin-bottom: 27px;
+}
+
+.hero-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* VENTAJAS */
+
+.ventajas {
+  background: white;
+  padding: 35px 0;
+  border-bottom: 1px solid #e9e6df;
+}
+
+.ventajas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ventaja {
+  padding: 5px 18px;
+  text-align: center;
+  border-right: 1px solid #e8e5df;
+}
+
+.ventaja:last-child {
+  border: none;
+}
+
+.ventaja-icono {
+  color: #bb9650;
+  font-size: 2rem;
+  margin-bottom: 7px;
+}
+
+.ventaja h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+.ventaja p {
+  font-size: .83rem;
+  color: var(--gris);
+}
+
+/* PRESENTACIÓN */
+
+.intro {
+  padding: 85px 0 55px;
+  text-align: center;
+}
+
+.intro p {
+  max-width: 780px;
+  margin: auto;
+  color: var(--gris);
+}
+
+/* SERVICIOS */
+
+.servicio {
+  padding: 65px 0;
+  background: white;
+}
+
+.servicio.alterno {
+  background: #ecebe7;
+}
+
+.servicio-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.servicio-grid.invertido .servicio-imagen {
+  order: 2;
+}
+
+.servicio-grid.invertido .servicio-info {
+  order: 1;
+}
+
+.servicio-imagen {
+  height: 390px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #ddd;
+}
+
+.servicio-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.servicio-imagen:hover img {
+  transform: scale(1.04);
+}
+
+/* IMAGEN ESPECIAL: CRIPTA FUNERARIA */
+
+.imagen-tumba {
+  position: relative;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #252525;
+}
+
+.imagen-tumba img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .5s;
+}
+
+.imagen-tumba:hover img {
+  transform: scale(1.035);
+}
+
+.numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--dorado);
+  color: #1a1d1e;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin: 16px 0;
+}
+
+.servicio-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.servicio-info p {
+  color: var(--gris);
+  margin-bottom: 18px;
+}
+
+.servicio-lista {
+  list-style: none;
+  margin: 18px 0 25px;
+}
+
+.servicio-lista li {
+  margin: 7px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.servicio-lista li::before {
+  content: "✓";
+  color: #b58e42;
+  font-weight: 700;
+}
+
+/* GALERÍA */
+
+.galeria {
+  padding: 85px 0;
+  background: var(--fondo);
+  color: white;
+}
+
+.galeria-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+
+.galeria-encabezado p {
+  color: #bdc1c2;
+  max-width: 450px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.galeria-item {
+  height: 265px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  background: #333;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.07);
+}
+
+.galeria-item span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 16px 13px;
+  font-weight: 600;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
+
+/* PROCESO */
+
+.proceso {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.proceso-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.paso {
+  padding: 30px 22px;
+  background: white;
+  border: 1px solid #e8e4dc;
+  border-radius: 6px;
+}
+
+.paso-numero {
+  font-family: 'Playfair Display', serif;
+  color: #b38c43;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.paso h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 8px;
+}
+
+.paso p {
+  color: var(--gris);
+  font-size: .92rem;
+}
+
+/* CONTACTO */
+
+.contacto {
+  padding: 75px 0;
+  color: white;
+  background:
+    linear-gradient(rgba(12,16,17,.95), rgba(12,16,17,.95)),
+    url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80')
+    center / cover;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: start;
+}
+
+.contacto h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  margin: 14px 0;
+}
+
+.contacto p {
+  color: #c8cccc;
+  margin-bottom: 22px;
+}
+
+.datos-contacto {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.datos-contacto li {
+  margin: 17px 0;
+  overflow-wrap: anywhere;
+}
+
+.datos-contacto a {
+  color: var(--dorado-claro);
+}
+
+.datos-contacto a:hover {
+  text-decoration: underline;
+}
+
+.formulario {
+  padding: 30px;
+  background: white;
+  color: var(--texto);
+  border-radius: 7px;
+}
+
+.formulario h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.formulario p {
+  color: var(--gris);
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 600;
+  font-size: .86rem;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  font-size: .94rem;
+  border: 1px solid #d9d9d5;
+  border-radius: 4px;
+  background: #fafaf8;
+  color: #202326;
+}
+
+.campo textarea {
+  min-height: 105px;
+  resize: vertical;
+}
+
+.formulario .boton {
+  width: 100%;
+  font-family: inherit;
+}
+
+/* MAPA */
+
+.mapa {
+  background: #e9e7e1;
+  padding: 65px 0;
+  text-align: center;
+}
+
+.mapa p {
+  color: var(--gris);
+  margin-bottom: 22px;
+}
+
+.mapa-marco {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 7px;
+  background: #ddd;
+}
+
+/* FOOTER */
+
+footer {
+  background: #101415;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.4fr;
+  gap: 35px;
+  padding-bottom: 30px;
+}
+
+footer h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 12px;
+}
+
+footer p,
+footer a {
+  color: #bfc3c4;
+  font-size: .88rem;
+  overflow-wrap: anywhere;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+footer a:hover {
+  color: var(--dorado-claro);
+}
+
+.copyright {
+  border-top: 1px solid #303536;
+  text-align: center;
+  padding-top: 18px;
+  font-size: .78rem;
+  color: #a9adae;
+}
+
+/* WHATSAPP FLOTANTE */
+
+.whatsapp-flotante {
+  position: fixed;
+  z-index: 900;
+  bottom: 20px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #20bd65;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 18px rgba(0,0,0,.25);
+  transition: .2s;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.08);
+}
+
+.whatsapp-flotante svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 900px) {
+  .menu {
+    gap: 13px;
+    font-size: .8rem;
+  }
+
+  .servicio-grid {
+    gap: 30px;
+  }
+
+  .servicio-imagen,
+  .imagen-tumba {
+    height: 330px;
+  }
+
+  .ventaja {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    min-height: 72px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #151a1c;
+    padding: 22px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+    border-top: 1px solid #34393a;
+  }
+
+  .menu.abierto {
+    display: flex;
+  }
+
+  .menu .boton {
+    align-self: flex-start;
+  }
+
+  .hero {
+    min-height: 550px;
+    background-position: 58% center;
+  }
+
+  .hero-contenido {
+    padding: 65px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+  }
+
+  .hero p {
+    font-size: .98rem;
+  }
+
+  .ventajas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 0;
+  }
+
+  .ventaja:nth-child(2) {
+    border-right: none;
+  }
+
+  .intro {
+    padding: 65px 0 35px;
+  }
+
+  .servicio {
+    padding: 45px 0;
+  }
+
+  .servicio-grid,
+  .servicio-grid.invertido {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .servicio-grid.invertido .servicio-imagen,
+  .servicio-grid.invertido .servicio-info {
+    order: initial;
+  }
+
+  .servicio-imagen,
+  .imagen-tumba {
+    height: 275px;
+  }
+
+  .servicio-info h2 {
+    font-size: 2rem;
+  }
+
+  .galeria {
+    padding: 60px 0;
+  }
+
+  .galeria-encabezado {
+    display: block;
+  }
+
+  .galeria-encabezado p {
+    margin-top: 15px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .galeria-item {
+    height: 180px;
+  }
+
+  .galeria-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .proceso {
+    padding: 60px 0;
+  }
+
+  .proceso-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contacto {
+    padding: 60px 0;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .formulario {
+    padding: 22px;
+  }
+
+  .mapa {
+    padding: 50px 0;
+  }
+
+  .mapa-marco {
+    height: 300px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 380px) {
+  .logo strong {
+    font-size: 1.08rem;
+  }
+
+  .logo small {
+    font-size: .48rem;
+  }
+
+  .hero-botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .galeria-item {
+    height: 145px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: auto;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="contenedor nav">
+
+    <a href="#inicio" class="logo" aria-label="Macuspana, inicio">
+      <span class="logo-simbolo">◆</span>
+      <strong>MACUSPANA</strong>
+      <small>TRANSFORMADORA DE MÁRMOL</small>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="menu">
+      ☰
+    </button>
+
+    <nav class="menu" id="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20me%20interesa%20solicitar%20una%20cotizaci%C3%B3n."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-dorado">
+        Cotizar →
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="contenedor">
+    <div class="hero-contenido">
+      <span class="etiqueta">Calidad en piedra natural</span>
+
+      <h1>
+        Macuspana<br>
+        <span>Transformadora</span><br>
+        de Mármol
+      </h1>
+
+      <p>
+        Elegancia, resistencia y calidad en cada proyecto.
+        Trabajamos con mármol, cuarzo y granito natural
+        para transformar tus espacios.
+      </p>
+
+      <div class="hero-botones">
+        <a href="#servicios" class="boton boton-dorado">
+          Conoce nuestros servicios →
+        </a>
+
+        <a
+          href="https://wa.me/529361104768?text=Hola,%20me%20interesa%20conocer%20sus%20servicios."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="boton boton-borde">
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ventajas">
+  <div class="contenedor ventajas-grid">
+    <article class="ventaja">
+      <div class="ventaja-icono">◇</div>
+      <h3>Materiales de calidad</h3>
+      <p>Mármol, cuarzo y granito natural.</p>
+    </article>
+
+    <article class="ventaja">
+      <div class="ventaja-icono">✓</div>
+      <h3>Trabajo especializado</h3>
+      <p>Atención a los detalles de cada proyecto.</p>
+    </article>
+
+    <article class="ventaja">
+      <div class="ventaja-icono">⌂</div>
+      <h3>Soluciones a medida</h3>
+      <p>Opciones para diferentes espacios y necesidades.</p>
+    </article>
+
+    <article class="ventaja">
+      <div class="ventaja-icono">☆</div>
+      <h3>Atención personalizada</h3>
+      <p>Te ayudamos a elegir la mejor opción.</p>
+    </article>
+  </div>
+</section>
+
+<section class="intro" id="nosotros">
+  <div class="contenedor">
+    <span class="etiqueta">Conoce nuestro trabajo</span>
+    <h2 class="titulo">La piedra ideal para cada proyecto</h2>
+
+    <p>
+      En Macuspana Transformadora de Mármol ofrecemos
+      soluciones para construcción, remodelación,
+      acabados decorativos y trabajos conmemorativos.
+      Desde cubiertas para cocina hasta pisos artesanales,
+      monumentos y pulido de superficies, buscamos ayudarte
+      a dar forma a tus ideas.
+    </p>
+  </div>
+</section>
+
+<!-- SERVICIO 1 -->
+
+<section class="servicio" id="servicios">
+  <div class="contenedor servicio-grid">
+
+    <div class="servicio-imagen">
+      <img
+        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85"
+        alt="Interior con acabados de piedra natural"
+        loading="lazy">
+    </div>
+
+    <div class="servicio-info">
+      <span class="etiqueta">Servicio 01</span>
+      <div class="numero">01</div>
+
+      <h2>Transformación de mármol, cuarzo y granito natural</h2>
+
+      <p>
+        Superficies y acabados para dar personalidad,
+        funcionalidad y elegancia a tus espacios.
+      </p>
+
+      <ul class="servicio-lista">
+        <li>Cubiertas para cocina</li>
+        <li>Desayunadores y barras</li>
+        <li>Lavabos y cubiertas para baño</li>
+        <li>Recubrimientos decorativos</li>
+        <li>Pisos y escaleras</li>
+      </ul>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20quiero%20cotizar%20un%20trabajo%20de%20m%C3%A1rmol,%20cuarzo%20o%20granito."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-dorado">
+        Cotizar este servicio →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICIO 2 -->
+
+<section class="servicio alterno">
+  <div class="contenedor servicio-grid invertido">
+
+    <div class="servicio-imagen">
+      <img
+        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85"
+        alt="Pisos y acabados decorativos"
+        loading="lazy">
+    </div>
+
+    <div class="servicio-info">
+      <span class="etiqueta">Servicio 02</span>
+      <div class="numero">02</div>
+
+      <h2>Fabricación de pisos artesanales</h2>
+
+      <p>
+        Soluciones para pisos y superficies con acabados
+        distintivos, decorativos y funcionales.
+      </p>
+
+      <ul class="servicio-lista">
+        <li>Losetas de granito</li>
+        <li>Pisos para terrazas</li>
+        <li>Pisos integrales</li>
+        <li>Acabados para diferentes espacios</li>
+      </ul>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20me%20interesa%20la%20fabricaci%C3%B3n%20de%20pisos%20artesanales."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-dorado">
+        Solicitar información →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICIO 3: CRIPTA FUNERARIA DE GRANITO -->
+
+<section class="servicio">
+  <div class="contenedor servicio-grid">
+
+    <div class="imagen-tumba">
+      <img
+        src="https://static.mywebsites360.com/d8453a298b514deea978c272f557806c/i/a64d32726d194f0cb94de2f42d649d4a/1/4SoifmQp45JMgBnHp7ed2/Untitled%20design%20-%202024-06-26T175201.735.png"
+        alt="Cripta funeraria completa de granito negro pulido"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='https://placehold.co/900x600/252525/d4b06a?text=Criptas+de+Granito';">
+    </div>
+
+    <div class="servicio-info">
+      <span class="etiqueta">Servicio 03</span>
+      <div class="numero">03</div>
+
+      <h2>Artes funerarios y monumentos</h2>
+
+      <p>
+        Trabajos en piedra para honrar la memoria
+        de quienes forman parte de nuestra historia.
+        Diseños elegantes y acabados cuidadosos para
+        monumentos, criptas y bóvedas de panteón.
+      </p>
+
+      <ul class="servicio-lista">
+        <li>Monumentos y bóvedas para panteón</li>
+        <li>Lápidas de mármol y piedra</li>
+        <li>Criptas funerarias de granito</li>
+        <li>Flores ornamentales</li>
+        <li>Cruces y detalles decorativos</li>
+        <li>Trabajos conmemorativos personalizados</li>
+      </ul>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20quisiera%20cotizar%20una%20cripta%20funeraria%20de%20granito%20o%20un%20monumento%20para%20b%C3%B3veda%20de%20pante%C3%B3n."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-dorado">
+        Consultar opciones →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICIO 4 -->
+
+<section class="servicio alterno">
+  <div class="contenedor servicio-grid invertido">
+
+    <div class="servicio-imagen">
+      <img
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85"
+        alt="Pisos y superficies de piedra pulida"
+        loading="lazy">
+    </div>
+
+    <div class="servicio-info">
+      <span class="etiqueta">Servicio 04</span>
+      <div class="numero">04</div>
+
+      <h2>Limpieza y pulido de pisos</h2>
+
+      <p>
+        Servicios de limpieza y mantenimiento para
+        mejorar la apariencia de diferentes superficies.
+      </p>
+
+      <ul class="servicio-lista">
+        <li>Pisos de mármol</li>
+        <li>Pisos de granito</li>
+        <li>Terrazo y terrazas</li>
+        <li>Superficies de cerámica</li>
+      </ul>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20quiero%20cotizar%20la%20limpieza%20y%20pulido%20de%20pisos."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="boton boton-dorado">
+        Cotizar limpieza y pulido →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- GALERÍA -->
+
+<section class="galeria" id="galeria">
+  <div class="contenedor">
+
+    <div class="galeria-encabezado">
+      <div>
+        <span class="etiqueta">Inspiración y acabados</span>
+        <h2 class="titulo">Galería de trabajos</h2>
+      </div>
+
+      <p>
+        Descubre ideas para tus espacios y encuentra
+        inspiración para tu próximo proyecto.
+      </p>
+    </div>
+
+    <div class="galeria-grid">
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20me%20interesan%20sus%20cubiertas%20para%20cocina."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="galeria-item">
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80"
+          alt="Diseño de interiores y cubiertas"
+          loading="lazy">
+        <span>Cocinas y cubiertas</span>
+      </a>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20me%20interesan%20sus%20pisos%20y%20recubrimientos."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="galeria-item">
+        <img
+          src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
+          alt="Pisos y acabados decorativos"
+          loading="lazy">
+        <span>Pisos y recubrimientos</span>
+      </a>
+
+      <a
+        href="https://wa.me/529361104768?text=Hola,%20quisiera%20informaci%C3%B3n%20sobre%20acabados%20en%20piedra."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="galeria-item">
+        <img
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80"
+          alt="Acabados en piedra natural"
+          loading="lazy">
+        <span>Acabados en piedra</span>
+      </a>
+
+    </div>
+
+    <p style="margin-top:22px;color:#bdc1c2;font-size:.85rem">
+      Las imágenes son ilustrativas. Se recomienda sustituirlas
+      por fotografías reales de los trabajos del negocio.
+    </p>
+
+  </div>
+</section>
+
+<!-- PROCESO -->
+
+<section class="proceso">
+  <div class="contenedor">
+
+    <span class="etiqueta">Comienza tu proyecto</span>
+    <h2 class="titulo">¿Cómo podemos ayudarte?</h2>
+
+    <p style="color:var(--gris)">
+      Cuéntanos lo que necesitas y solicita información.
+    </p>
+
+    <div class="proceso-grid">
+      <article class="paso">
+        <div class="paso-numero">01</div>
+        <h3>Cuéntanos tu idea</h3>
+        <p>Indícanos qué material, producto o servicio necesitas.</p>
+      </article>
+
+      <article class="paso">
+        <div class="paso-numero">02</div>
+        <h3>Solicita tu cotización</h3>
+        <p>Comparte medidas, fotografías y detalles del proyecto.</p>
+      </article>
+
+      <article class="paso">
+        <div class="paso-numero">03</div>
+        <h3>Define los detalles</h3>
+        <p>Consulta las opciones disponibles y los siguientes pasos.</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+
+<section class="contacto" id="contacto">
+  <div class="contenedor contacto-grid">
+
+    <div>
+      <span class="etiqueta">Estamos para atenderte</span>
+      <h2>Hagamos realidad tu próximo proyecto</h2>
+
+      <p>
+        ¿Buscas una cubierta de cocina, un piso artesanal,
+        un monumento o un servicio de pulido?
+        Contáctanos y solicita tu cotización.
+      </p>
+
+      <ul class="datos-contacto">
+        <li>
+          📍 <strong>Dirección:</strong><br>
+          Carretera Villahermosa - Escárcega km. 46.5,
+          frente al puente del crucero, Macuspana,
+          Tabasco, México.
+        </li>
+
+        <li>
+          📞 <strong>Teléfono y WhatsApp:</strong><br>
+          <a href="tel:+529361104768">+52 936 110 4768</a>
+        </li>
+
+        <li>
+          ✉️ <strong>Correo electrónico:</strong><br>
+          <a href="mailto:francisco70her@gmail.com">
+            francisco70her@gmail.com
+          </a>
+        </li>
+      </ul>
+
+      <div class="hero-botones">
+        <a
+          href="https://wa.me/529361104768?text=Hola,%20me%20interesa%20solicitar%20una%20cotizaci%C3%B3n."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="boton boton-dorado">
+          Escribir por WhatsApp
+        </a>
+
+        <a href="tel:+529361104768" class="boton boton-borde">
+          Llamar ahora
+        </a>
+      </div>
+
+      <p style="margin-top:22px">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Carretera+Villahermosa+Escarcega+km+46.5+Macuspana+Tabasco"
+          target="_blank"
+          rel="noopener noreferrer">
+          📍 Cómo llegar con Google Maps →
+        </a>
+      </p>
+    </div>
+
+    <form class="formulario" id="formulario">
+      <h3>Solicita tu cotización</h3>
+
+      <p>
+        Completa los datos y te prepararemos un mensaje
+        para enviarlo directamente por WhatsApp.
+      </p>
+
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          autocomplete="name"
+          required>
+      </div>
+
+      <div class="campo">
+        <label for="servicioSelect">Servicio de interés</label>
+
+        <select id="servicioSelect" name="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <option>Transformación de mármol, cuarzo y granito</option>
+          <option>Fabricación de pisos artesanales</option>
+          <option>Artes funerarios y monumentos</option>
+          <option>Limpieza y pulido de pisos</option>
+          <option>Otro proyecto</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="detalles">Detalles del proyecto</label>
+        <textarea
+          id="detalles"
+          name="detalles"
+          placeholder="Describe lo que necesitas, medidas o tipo de material..."
+          required></textarea>
+      </div>
+
+      <button type="submit" class="boton boton-dorado">
+        Enviar por WhatsApp →
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- MAPA -->
+
+<section class="mapa">
+  <div class="contenedor">
+    <span class="etiqueta">Encuéntranos</span>
+    <h2 class="titulo">Visítanos en Macuspana</h2>
+
+    <p>
+      Carretera Villahermosa - Escárcega km. 46.5,
+      frente al puente del crucero.
+    </p>
+
+    <iframe
+      class="mapa-marco"
+      title="Mapa de ubicación de Macuspana Transformadora de Mármol"
+      src="https://maps.google.com/maps?q=Carretera%20Villahermosa%20Escarcega%20km%2046.5%20Macuspana%20Tabasco&t=&z=14&ie=UTF8&iwloc=&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Carretera+Villahermosa+Escarcega+km+46.5+Macuspana+Tabasco"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="boton boton-dorado"
+      style="margin-top:22px">
+      Abrir en Google Maps →
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- PIE DE PÁGINA -->
+
+<footer>
+  <div class="contenedor">
+
+    <div class="footer-grid">
+      <div>
+        <a href="#inicio" class="logo">
+          <span class="logo-simbolo">◆</span>
+          <strong>MACUSPANA</strong>
+          <small>TRANSFORMADORA DE MÁRMOL</small>
+        </a>
+
+        <p style="margin-top:18px">
+          Soluciones en mármol, cuarzo, granito natural,
+          pisos artesanales, artes funerarios y cuidado
+          de superficies.
+        </p>
+      </div>
+
+      <div>
+        <h3>Enlaces</h3>
+        <div class="footer-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Contáctanos</h3>
+
+        <p>
+          <a href="tel:+529361104768">+52 936 110 4768</a>
+        </p>
+
+        <p style="margin-top:8px">
+          <a href="mailto:francisco70her@gmail.com">
+            francisco70her@gmail.com
+          </a>
+        </p>
+
+        <p style="margin-top:8px">
+          Carretera Villahermosa - Escárcega km. 46.5,
+          frente al puente del crucero, Macuspana, Tabasco.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Carretera+Villahermosa+Escarcega+km+46.5+Macuspana+Tabasco"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display:inline-block;margin-top:10px">
+          Ver ubicación →
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="anio"></span> Macuspana Transformadora de Mármol.
+      Todos los derechos reservados.
+    </div>
+
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOTANTE -->
+
+<a
+  href="https://wa.me/529361104768?text=Hola,%20me%20interesan%20los%20servicios%20de%20Macuspana%20Transformadora%20de%20M%C3%A1rmol."
+  class="whatsapp-flotante"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+  title="Contactar por WhatsApp">
+
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 .8A15 15 0 0 0 3.1 23.5L1 31l7.7-2A15 15 0 1 0 16 .8zm0 27.4c-2.3 0-4.5-.6-6.4-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5a12.4 12.4 0 1 1 10.6 5.9zm6.8-9.3c-.4-.2-2.1-1-2.4-1.1-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.2 2.6 4 6.3 5.5.9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.1-.9 2.4-1.8.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+  </svg>
+</a>
+
+<script>
+/* MENÚ PARA CELULARES */
+
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", function () {
+  const abierto = menu.classList.toggle("abierto");
+
+  menuToggle.setAttribute("aria-expanded", String(abierto));
+  menuToggle.setAttribute(
+    "aria-label",
+    abierto ? "Cerrar menú" : "Abrir menú"
+  );
+
+  menuToggle.textContent = abierto ? "×" : "☰";
+});
+
+menu.querySelectorAll("a").forEach(function (enlace) {
+  enlace.addEventListener("click", function () {
+    menu.classList.remove("abierto");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menú");
+    menuToggle.textContent = "☰";
+  });
+});
+
+/* AÑO AUTOMÁTICO */
+
+document.getElementById("anio").textContent =
+  new Date().getFullYear();
+
+/* FORMULARIO A WHATSAPP */
+
+const NUMERO_WHATSAPP = "529361104768";
+
+document.getElementById("formulario").addEventListener(
+  "submit",
+  function (evento) {
+    evento.preventDefault();
+
+    const nombre = document
+      .getElementById("nombre")
+      .value.trim();
+
+    const servicio = document
+      .getElementById("servicioSelect")
+      .value;
+
+    const detalles = document
+      .getElementById("detalles")
+      .value.trim();
+
+    if (!nombre || !servicio || !detalles) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
+
+    const mensaje =
+      "Hola, soy " + nombre + ".\n\n" +
+      "Me interesa solicitar una cotización a " +
+      "Macuspana Transformadora de Mármol.\n\n" +
+      "Servicio: " + servicio + "\n" +
+      "Detalles del proyecto: " + detalles + "\n\n" +
+      "Quedo atento(a) a su respuesta.";
+
+    const url =
+      "https://wa.me/" +
+      NUMERO_WHATSAPP +
+      "?text=" +
+      encodeURIComponent(mensaje);
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+);
+</script>
+
+</body>
+</html>
